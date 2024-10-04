@@ -50,4 +50,63 @@ poped_item = list_items.pop()  # last element removed and stored in poped_item v
 
 list_items.pop(0) # --> 0th index element is removed.
 
-list_items.remove("suraj") # removed suraj from the list. remove() deletes only 1st occurance of value which we have deleted.
+#list_items.remove("suraj") # removed suraj from the list. remove() deletes only 1st occurance of value which we have dele
+
+
+########################## Sort  Note: While sorting make sure all values will be in lowercase or uppercase. no upper lower.
+
+#sort() method change order of the list permanently cannot store or create new list sort() apply on original variable of list., for reverse order use sort(reverse = True)
+
+list_of_cars = ['bmw','audi','mercedeze','innova']
+list_of_cars.sort()
+print("###",list_of_cars) #['audi', 'bmw', 'innova', 'mercedeze']
+
+
+list_of_cars = ['bmw','audi','mercedeze','innova']
+list_of_cars.sort(reverse= True)
+print(list_of_cars) #['mercedeze', 'innova', 'bmw', 'audi']
+
+
+
+# Sort a list temporarily with the sorted function.
+list_of_cars = ['bmw','audi','mercedeze','innova']
+
+print("sorted list ", sorted(list_of_cars)) #sorted list  ['audi', 'bmw', 'innova', 'mercedeze']
+
+print("original list", list_of_cars) #original list ['bmw', 'audi', 'mercedeze', 'innova']
+
+ 
+sort_upper = ["BMW",'AUDI']
+
+print(sorted(sort_upper )) #,reverse=True)) ['AUDI', 'BMW']
+
+
+############# Printing a list in Reverse order reverse() --> here it will not sort just it will print in reverse order.
+
+list_of_cars = ['bmw','audi','mercedeze','innova']
+
+list_of_cars.reverse()
+print("Reverse order", list_of_cars) #['innova', 'mercedeze', 'audi', 'bmw']
+
+
+############ Finding lenght of list:
+
+
+list_of_cars = ['bmw','audi','mercedeze','innova']
+print("length of list", len(list_of_cars))
+
+#Note: Python counts the items in a list starting with one, so you shouldn't run into any off-by-one errors when determining the length of list.
+
+
+
+#Avoiding index error when working with an string
+
+"""
+Let's say you have three items, and you ask for the fourth item.
+
+Index error means python can't find an item at the index you requested.
+
+Keep in mind that whenever you want to access last item in a list you use the index-1, This will always work, even if your list has changed in size since the last time
+you accessed.
+
+"""
