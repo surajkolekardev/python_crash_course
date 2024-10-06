@@ -9,7 +9,7 @@ for magician in magicians:  # ** This line tells python to pull a name from the 
     print(f"{magician.title()}, That was a great trick") #Alice, That was a great trick, Same for the remaining items.
     print(f"I can't wait to see your next trick, {magician.title()}")
 
-print("\nThank you everyone. That was a great magic show.\n")  
+print("\nThank you everyone. That was a great magic show.")  
 
 """
     Output:
@@ -40,6 +40,23 @@ print("\nThank you everyone. That was a great magic show.\n")
     """
 
 
-print("************************************  A Closer Look at looping  ***********************")
+print("************************************ Making Numerical List ***********************")
 
+#Using the range() function --> range(start,stop,step)
+# Range() exclude last item. e.g range(1,5) it will print 1,2,3,4 not 5th one, its another example of off byu one.
+
+
+#Using range make list of numbers
+
+numbers = list(range(1,6))
+print(numbers) # [1, 2, 3, 4, 5]
  
+
+print("************************************ Simple statistic with a list of Numbers ***********************")
+
+digits = [1,2,3,4,5,6,7,8,9,0]
+print(min(digits))
+print(max(digits))
+print(sum(digits))
+
+print("************************************ List Comprehension ***********************")
