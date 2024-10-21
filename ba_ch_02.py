@@ -82,6 +82,8 @@ print(universal_age) # 14000000
 ######### Multiple assignments:
 x, y, z = 0, 0, 0  #Here python will assign each value to its respectively positioned variables..
 
+a,b,c,d,e = df_read_file() #method packing upacking thing which we have seen in prepme capital group POC. whatever return this funciton it will assign to those variables and later we use those variables.
+
 ######## Constants
 MAX_CONNECTIONS = 5000 # Make the name of the variable all capital letters.
 
